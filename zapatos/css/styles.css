@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #000000ef;
+    --background-color: #f9f5f0;
+    --dark-color: #000000;
+}
+
+html, body {
+    height: 90%;
+    margin: 90;
+    font-size: 90%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 100px;
+}
+
+/* ********************************** */
+/*           FORMULARIO               */
+/* ********************************** */
+
+main .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+main .card-header {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+
+main .card-header h3 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+main .card-body {
+    padding: 3rem;
+}
+
+main .form-group label {
+    font-weight: 500;
+    color: var(--dark-color);
+    font-size: 1.6rem;
+}
+
+main .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+
+main .btn-primary {
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    color: white;
+}
+
+main .btn-primary:hover {
+    background-color: #333333;
+}
+
+main .card-footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main .card-footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+}
+
+main .card-footer a:hover {
+    color: var(--dark-color);
+}
+
+/* ********************************** */
+/*           GESTOR DE ARCHIVOS       */
+/* ********************************** */
+
+.file-manager {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.file-manager th, .file-manager td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.file-manager th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.file-manager tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.file-manager tr:hover {
+    background-color: #ddd;
+}
+
+.file-manager a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.file-manager a:hover {
+    text-decoration: underline;
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+.footer {
+    background-color: var(--primary-color);
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.menu-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 30rem;
+    gap: 3rem;
+    justify-items: center;
+}
+
+.title-footer {
+    color: #eee;
+    font-weight: 450;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+    list-style: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+    color: var(--dark-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons span {
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #00acee;
+}
+
+.youtube {
+    background-color: #c4302b;
+}
+
+.pinterest {
+    background-color: #c8232c;
+}
+
+.instagram {
+    background: linear-gradient(
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #fcaf45
+    );
+}
+
+.content p {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.content input {
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+    padding: 0.5rem 0 1.2rem;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+    color: #eee;
+}
+
+.content button {
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.content button:hover {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.copyright {
+    color: #eee;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid #ffffff;
+}
+
+.copyright p {
+    color: #eee;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .menu-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .copyright {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+    html {
+        font-size: 42.5%;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .btn-primary {
+        font-size: 1.6rem;
+        padding: 1rem;
+    }
+
+    .menu-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info ul,
+    .information ul,
+    .my-account ul {
+        display: none;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+}
+
